@@ -1,0 +1,51 @@
+1. Create a class student:
+declare 3 instance variables as private.
+student id, student name and student course.
+use the getter and setter method to set the student details and then
+create another class with main method to display the student details.
+(Also rewrite the above problem using constructors)
+
+package com.cognizant.tax;
+/*
+ * @Author Farzana Shaikh
+ */
+
+class Student{
+	private int id;
+	private String name;
+	private String course;
+	public void setid(){ 
+		id=12;
+	}
+	public void setname()	{
+		name="Farzana";
+		
+	}
+	public void setcourse() {
+		course="Bsc.IT";
+		
+	}
+	public int getid() {
+		return id;
+	}
+	public String getname() {
+		return name;
+	}
+	public String getcourse() {
+		return course;
+		
+	}
+}	
+	
+public class StudentDisplay{
+	public static void main(String[] args) {
+		Student st = new Student();
+		st.setid();
+		st.setname();
+		st.setcourse();
+		System.out.println(st.getid());
+		System.out.println(st.getname());
+		System.out.println(st.getcourse());	
+
+	}
+}
